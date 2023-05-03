@@ -25,7 +25,10 @@ testing {
                     setSrcDirs(listOf("$sourcesRootDir/java"))
                 }
                 kotlin {
-                    setSrcDirs(listOf("$sourcesRootDir/kotlin"))
+                    setSrcDirs(listOf(
+                            "$sourcesRootDir/kotlin",
+                            "$sourcesRootDir/java",
+                    ))
                 }
                 resources {
                     setSrcDirs(listOf("$sourcesRootDir/resources"))
